@@ -1,3 +1,9 @@
+@media only screen and (orientation: landscape) {
+  body {
+      background-color: #f4f4f4;
+  }
+}
+
 body{
   padding: 0;
   margin:0;
@@ -43,12 +49,14 @@ body{
     position: relative;
 }
 .heading{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  width: 99%;
+  font-weight: bold;
+  background: white;
+  height: 36px;
 }
 .heading .title{
     font-size: 20px;
@@ -138,13 +146,7 @@ body{
   text-align: center;
 }
 
-@media all and (max-width: 1020px){
-  .mainChartWrap{
-    width: 90%;
-  }
-}
-
-@media all and (max-width:467px){
+@media all and (max-width:480px){
   .mainChartWrap{
     width: 80%;
   }

@@ -1,23 +1,18 @@
 import React, { Fragment } from 'react'
 
 class TableComponent extends React.Component {
-    constructor(props) {
-        super(props)
-
-    }
-
     render() {
         return (
             <Fragment>
-                <div class="tableContainer">
+                <div className="tableContainer">
                     <div className="title">Showing 10 of 10</div>
-                    <div class="table-box">
+                    <div className="table-box">
                         <table>
                             <TableHeading />
-                            <TableBody/>
-                            <TableBody/>
-                            <TableBody/>
-                            <TableBody/>
+                            <TableBody />
+                            <TableBody />
+                            <TableBody />
+                            <TableBody />
                         </table>
                     </div>
                 </div>
@@ -56,30 +51,34 @@ const TableHeading = () => (
 
 )
 
-const TableBody = () => (
-    <tbody>
-        <td>
-            Ishaank
+const TableBody = () => {
+    return (
+        <tbody>
+            <tr>
+                <td>
+                    Ishaank
                                 </td>
-        <td>
-            23
+                <td>
+                    23
                                 </td>
-        <td>
-            9560940800
+                <td>
+                    9560940800
                                 </td>
-        <td>
-            Ishaank
+                <td>
+                    Ishaank
                                 </td>
-        <td>
-            23
+                <td>
+                    23
                                 </td>
-        <td>
-            95609
+                <td>
+                    95609
                                 </td>
-        <td>
-            956094
+                <td>
+                    956094
                                 </td>
-    </tbody>
-)
+            </tr>
+        </tbody>
+    )
+}
 
 export default TableComponent;

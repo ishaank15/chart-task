@@ -27,11 +27,11 @@ class MainCharts extends React.Component {
     const { options } = this.state;
     return (
       <Fragment>
-        <div class="mainChart">
-          <div class="mainChart-box">
+        <div className="mainChart">
+          <div className="mainChart-box">
           < Chart options = { options } highcharts = { Highcharts } />
           </div>
-          <div class="mainChart-box">
+          <div className="mainChart-box">
           < Chart options = { options } highcharts = { Highcharts } />
           </div>
         </div>

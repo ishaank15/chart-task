@@ -1,23 +1,15 @@
 import React, { Fragment } from 'react'
 import Highcharts from 'highcharts/highstock'
-import Chart from './Chart'
-
-const chartOptions = {
-  title: {
-    text: ''
-  },
-  series: [{
-    data: [1, 2, 3],
-
-  }]
-}
+import Chart from './components/Chart'
+import PieComponent from './components/PieChart';
+import {LINE_CHART_OPTIONS} from './constants'
 
 class MainCharts extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      options:  chartOptions
+      options:  LINE_CHART_OPTIONS
     }
   }
 
@@ -25,13 +17,13 @@ class MainCharts extends React.Component {
     const { options } = this.state;
     return (
       <Fragment>
-        <div class="mainChart">
-          <div class="mainChart-box">
+        <div className="mainChart">
+          <div className="mainChart-box">
             <ChartHeader/>
             < Chart options={options} highcharts={Highcharts} />
           </div>
-          <div class="mainChart-box">
-            < Chart options={options} highcharts={Highcharts} />
+          <div className="mainChart-box">
+            < PieComponent />
           </div>
         </div>
       </Fragment>
