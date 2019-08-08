@@ -1,7 +1,4 @@
-# Food Ordering Web Application
-
-   Food Ordering Web Application:
-   A Basic application to place an order food , editing orders, cancelling , viewing the details of the order etc. It is designed  with the help of React , Redux, mockable API's are used as data-source
+# CHART HTML -UI
 
 ## Project Description
 
