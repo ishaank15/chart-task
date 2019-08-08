@@ -23,7 +23,9 @@ class MainCharts extends React.Component {
             < Chart options={options} highcharts={Highcharts} />
           </div>
           <div className="mainChart-box">
-            < PieComponent />
+            <ChartHeader/>
+            < Chart options={options} highcharts={Highcharts} />
+            {/* < PieComponent /> */}
           </div>
         </div>
       </Fragment>

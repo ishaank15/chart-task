@@ -36,7 +36,7 @@ body{
   padding: 15px;
   background: #9c9c9c1a;
   float: right;
-  width: 94%;
+  width: 93%;
 }
 .mainChart{
   text-align: center;
@@ -146,6 +146,17 @@ body{
   text-align: center;
 }
 
+@media all and (max-width:1050px){
+  .mainChartWrap{
+    width: 90%;
+  }
+  .statData-box{
+    width: 13%;
+  }
+  .statData-box .count{
+    font-size: 28px;
+  }
+}
 @media all and (max-width:480px){
   .mainChartWrap{
     width: 80%;
