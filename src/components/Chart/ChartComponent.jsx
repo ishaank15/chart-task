@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Highcharts from 'highcharts/highstock'
 import Chart from './components/Chart'
-import PieComponent from './components/PieChart';
+// import PieComponent from './components/PieChart';
 import {LINE_CHART_OPTIONS} from './constants'
 
 class MainCharts extends React.Component {
